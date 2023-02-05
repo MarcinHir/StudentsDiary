@@ -39,9 +39,10 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnAdd.Location = new System.Drawing.Point(12, 12);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 29);
+            this.btnAdd.Size = new System.Drawing.Size(92, 41);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Dodaj";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -50,9 +51,10 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnEdit.Location = new System.Drawing.Point(93, 12);
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnEdit.Location = new System.Drawing.Point(110, 12);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 29);
+            this.btnEdit.Size = new System.Drawing.Size(99, 41);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Edytuj";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -61,9 +63,10 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Red;
-            this.btnDelete.Location = new System.Drawing.Point(174, 12);
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDelete.Location = new System.Drawing.Point(215, 12);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 29);
+            this.btnDelete.Size = new System.Drawing.Size(103, 41);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Usuń";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -72,9 +75,10 @@
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnRefresh.Location = new System.Drawing.Point(255, 12);
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnRefresh.Location = new System.Drawing.Point(324, 12);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 29);
+            this.btnRefresh.Size = new System.Drawing.Size(102, 41);
             this.btnRefresh.TabIndex = 3;
             this.btnRefresh.Text = "Odśwież";
             this.btnRefresh.UseVisualStyleBackColor = false;
@@ -91,21 +95,21 @@
             this.dgvDiary.Name = "dgvDiary";
             this.dgvDiary.RowHeadersWidth = 51;
             this.dgvDiary.RowTemplate.Height = 24;
-            this.dgvDiary.Size = new System.Drawing.Size(862, 427);
+            this.dgvDiary.Size = new System.Drawing.Size(1276, 427);
             this.dgvDiary.TabIndex = 4;
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(886, 512);
+            this.ClientSize = new System.Drawing.Size(1300, 512);
             this.Controls.Add(this.dgvDiary);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiary)).EndInit();
             this.ResumeLayout(false);

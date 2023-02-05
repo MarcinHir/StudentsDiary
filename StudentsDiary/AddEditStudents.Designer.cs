@@ -52,7 +52,7 @@
             // 
             // tbId
             // 
-            this.tbId.Location = new System.Drawing.Point(126, 12);
+            this.tbId.Location = new System.Drawing.Point(159, 12);
             this.tbId.Name = "tbId";
             this.tbId.ReadOnly = true;
             this.tbId.Size = new System.Drawing.Size(199, 22);
@@ -78,7 +78,7 @@
             // 
             // tbFirstName
             // 
-            this.tbFirstName.Location = new System.Drawing.Point(126, 40);
+            this.tbFirstName.Location = new System.Drawing.Point(159, 40);
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.Size = new System.Drawing.Size(199, 22);
             this.tbFirstName.TabIndex = 2;
@@ -94,7 +94,7 @@
             // 
             // tbLastName
             // 
-            this.tbLastName.Location = new System.Drawing.Point(126, 68);
+            this.tbLastName.Location = new System.Drawing.Point(159, 68);
             this.tbLastName.Name = "tbLastName";
             this.tbLastName.Size = new System.Drawing.Size(199, 22);
             this.tbLastName.TabIndex = 4;
@@ -110,7 +110,7 @@
             // 
             // tbMath
             // 
-            this.tbMath.Location = new System.Drawing.Point(126, 96);
+            this.tbMath.Location = new System.Drawing.Point(159, 96);
             this.tbMath.Name = "tbMath";
             this.tbMath.Size = new System.Drawing.Size(199, 22);
             this.tbMath.TabIndex = 6;
@@ -126,7 +126,7 @@
             // 
             // tbPhysic
             // 
-            this.tbPhysic.Location = new System.Drawing.Point(126, 124);
+            this.tbPhysic.Location = new System.Drawing.Point(159, 124);
             this.tbPhysic.Name = "tbPhysic";
             this.tbPhysic.Size = new System.Drawing.Size(199, 22);
             this.tbPhysic.TabIndex = 8;
@@ -142,7 +142,7 @@
             // 
             // tbTechnology
             // 
-            this.tbTechnology.Location = new System.Drawing.Point(126, 152);
+            this.tbTechnology.Location = new System.Drawing.Point(159, 152);
             this.tbTechnology.Name = "tbTechnology";
             this.tbTechnology.Size = new System.Drawing.Size(199, 22);
             this.tbTechnology.TabIndex = 10;
@@ -158,7 +158,7 @@
             // 
             // tbPolishLang
             // 
-            this.tbPolishLang.Location = new System.Drawing.Point(126, 180);
+            this.tbPolishLang.Location = new System.Drawing.Point(159, 180);
             this.tbPolishLang.Name = "tbPolishLang";
             this.tbPolishLang.Size = new System.Drawing.Size(199, 22);
             this.tbPolishLang.TabIndex = 12;
@@ -174,14 +174,14 @@
             // 
             // tbforeignLang
             // 
-            this.tbforeignLang.Location = new System.Drawing.Point(126, 208);
+            this.tbforeignLang.Location = new System.Drawing.Point(159, 208);
             this.tbforeignLang.Name = "tbforeignLang";
             this.tbforeignLang.Size = new System.Drawing.Size(199, 22);
             this.tbforeignLang.TabIndex = 14;
             // 
             // rtbComments
             // 
-            this.rtbComments.Location = new System.Drawing.Point(126, 249);
+            this.rtbComments.Location = new System.Drawing.Point(159, 249);
             this.rtbComments.Name = "rtbComments";
             this.rtbComments.Size = new System.Drawing.Size(199, 116);
             this.rtbComments.TabIndex = 16;
@@ -198,9 +198,9 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(126, 393);
+            this.btnCancel.Location = new System.Drawing.Point(41, 404);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(129, 32);
             this.btnCancel.TabIndex = 18;
             this.btnCancel.Text = "Anuluj";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -208,9 +208,9 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(250, 393);
+            this.btnConfirm.Location = new System.Drawing.Point(213, 404);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirm.Size = new System.Drawing.Size(145, 32);
             this.btnConfirm.TabIndex = 19;
             this.btnConfirm.Text = "Zatwierdź";
             this.btnConfirm.UseVisualStyleBackColor = true;
@@ -220,7 +220,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 459);
+            this.ClientSize = new System.Drawing.Size(425, 488);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbComments);

@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
     <EmbeddedResource Include="AddEditStudents.resx">
       <DependentUpon>AddEditStudents.cs</DependentUpon>
     </EmbeddedResource>
