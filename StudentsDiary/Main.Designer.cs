@@ -86,15 +86,23 @@
             // 
             // dgvDiary
             // 
+            this.dgvDiary.AllowUserToOrderColumns = true;
+            this.dgvDiary.AllowUserToResizeColumns = false;
+            this.dgvDiary.AllowUserToResizeRows = false;
             this.dgvDiary.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDiary.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDiary.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvDiary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDiary.Location = new System.Drawing.Point(12, 73);
+            this.dgvDiary.MultiSelect = false;
             this.dgvDiary.Name = "dgvDiary";
+            this.dgvDiary.ReadOnly = true;
+            this.dgvDiary.RowHeadersVisible = false;
             this.dgvDiary.RowHeadersWidth = 51;
             this.dgvDiary.RowTemplate.Height = 24;
+            this.dgvDiary.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDiary.Size = new System.Drawing.Size(1276, 427);
             this.dgvDiary.TabIndex = 4;
             // 
@@ -110,7 +118,7 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "Dziennik Uczniów";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiary)).EndInit();
             this.ResumeLayout(false);
 
