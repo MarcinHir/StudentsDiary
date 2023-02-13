@@ -17,5 +17,9 @@ namespace StudentsDiary
         public string Technology { get; set; }
         public string PolishLang { get; set; }
         public string ForeignLang { get; set; }
+        public string Group { get; set; }
+        public bool AdditionalTasks { get; set; }
+        
+
     }
 }

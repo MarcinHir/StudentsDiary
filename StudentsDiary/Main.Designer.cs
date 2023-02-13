@@ -33,6 +33,8 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.dgvDiary = new System.Windows.Forms.DataGridView();
+            this.cbGroup = new System.Windows.Forms.ComboBox();
+            this.lbGroup = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiary)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,12 +108,37 @@
             this.dgvDiary.Size = new System.Drawing.Size(1276, 427);
             this.dgvDiary.TabIndex = 4;
             // 
+            // cbGroup
+            // 
+            this.cbGroup.FormattingEnabled = true;
+            this.cbGroup.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "Wszystkie"});
+            this.cbGroup.Location = new System.Drawing.Point(622, 21);
+            this.cbGroup.Name = "cbGroup";
+            this.cbGroup.Size = new System.Drawing.Size(203, 24);
+            this.cbGroup.TabIndex = 5;
+            // 
+            // lbGroup
+            // 
+            this.lbGroup.AutoSize = true;
+            this.lbGroup.Location = new System.Drawing.Point(492, 24);
+            this.lbGroup.Name = "lbGroup";
+            this.lbGroup.Size = new System.Drawing.Size(102, 16);
+            this.lbGroup.TabIndex = 6;
+            this.lbGroup.Text = "Wybierz Grupę :";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1300, 512);
+            this.Controls.Add(this.lbGroup);
+            this.Controls.Add(this.cbGroup);
             this.Controls.Add(this.dgvDiary);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDelete);
@@ -121,6 +148,7 @@
             this.Text = "Dziennik Uczniów";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiary)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -131,6 +159,8 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridView dgvDiary;
+        private System.Windows.Forms.ComboBox cbGroup;
+        private System.Windows.Forms.Label lbGroup;
     }
 }
 

@@ -22,12 +22,23 @@ namespace StudentsDiary
             InitializeComponent();
             RefreshDiary();
             SetColumnsHeader();
-        }
 
+            var number = new List<Student>();
+            
+
+        }
+        
         private void RefreshDiary()
         {
             var students = _fileHelper.DeserializeFromFile();
-            dgvDiary.DataSource = students;
+            var chosenGroup = cbGroup.Text;
+
+
+            if (chosenGroup == "Wszystkie")
+                dgvDiary.DataSource = students;
+
+            else 
+                dgvDiary.DataSource = students.FindAll(x => x.Group == chosenGroup);
 
         }
         private void SetColumnsHeader()
@@ -41,6 +52,8 @@ namespace StudentsDiary
             dgvDiary.Columns[6].HeaderText = "Technologia";
             dgvDiary.Columns[7].HeaderText = "Język Polski";
             dgvDiary.Columns[8].HeaderText = "Język Obcy";
+            dgvDiary.Columns[9].HeaderText = "Grupa";
+            dgvDiary.Columns[10].HeaderText = "Zajęcia Dodatkowe";
         }
 
 
@@ -83,14 +96,38 @@ namespace StudentsDiary
             }
             AddEditStudents addEditStudents = new AddEditStudents(
                 Convert.ToInt32(dgvDiary.SelectedRows[0].Cells[2].Value));
-
+            
+            addEditStudents.FormClosing += AddEditStudents_FormClosing;
             addEditStudents.ShowDialog();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddEditStudents addEditStudents = new AddEditStudents();
+            addEditStudents.FormClosing += AddEditStudents_FormClosing;
             addEditStudents.ShowDialog();
         }
+
+        private void AddEditStudents_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            RefreshDiary();
+        }
+
+        //private void cbGroup_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    var students = _fileHelper.DeserializeFromFile();
+ 
+        //    if (cbGroup.Text == "Wszystkie")
+        //    {
+                
+        //        dgvDiary.DataSource = students;
+        //    }
+        //    else
+        //    {
+        //        dgvDiary.DataSource = students.Where(x => x.Group == cbGroup.Text);
+        //    }
+            
+            
+        //}
     }
 }

@@ -55,6 +55,8 @@ namespace StudentsDiary
             tbTechnology.Text = _student.Technology;
             tbPolishLang.Text = _student.PolishLang;
             tbforeignLang.Text = _student.ForeignLang;
+            cbPickGroup.Text = _student.Group;
+            chbAdditionalTasks.Checked = _student.AdditionalTasks;
             rtbComments.Text = _student.Comments;
         }
         private void btnConfirm_Click(object sender, EventArgs e)
@@ -86,7 +88,9 @@ namespace StudentsDiary
                 Technology = tbTechnology.Text,
                 Physics = tbPhysic.Text,
                 PolishLang = tbPolishLang.Text,
-                ForeignLang = tbforeignLang.Text
+                ForeignLang = tbforeignLang.Text,
+                Group = cbPickGroup.Text,
+                AdditionalTasks = chbAdditionalTasks.Checked
             };
 
             students.Add(student);

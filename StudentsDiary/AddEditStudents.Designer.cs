@@ -48,11 +48,15 @@
             this.lbComments = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
+            this.lbGroup = new System.Windows.Forms.Label();
+            this.lbAdditionalTasks = new System.Windows.Forms.Label();
+            this.chbAdditionalTasks = new System.Windows.Forms.CheckBox();
+            this.cbPickGroup = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // tbId
             // 
-            this.tbId.Location = new System.Drawing.Point(159, 12);
+            this.tbId.Location = new System.Drawing.Point(173, 12);
             this.tbId.Name = "tbId";
             this.tbId.ReadOnly = true;
             this.tbId.Size = new System.Drawing.Size(199, 22);
@@ -78,7 +82,7 @@
             // 
             // tbFirstName
             // 
-            this.tbFirstName.Location = new System.Drawing.Point(159, 40);
+            this.tbFirstName.Location = new System.Drawing.Point(173, 40);
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.Size = new System.Drawing.Size(199, 22);
             this.tbFirstName.TabIndex = 2;
@@ -94,7 +98,7 @@
             // 
             // tbLastName
             // 
-            this.tbLastName.Location = new System.Drawing.Point(159, 68);
+            this.tbLastName.Location = new System.Drawing.Point(173, 68);
             this.tbLastName.Name = "tbLastName";
             this.tbLastName.Size = new System.Drawing.Size(199, 22);
             this.tbLastName.TabIndex = 4;
@@ -110,7 +114,7 @@
             // 
             // tbMath
             // 
-            this.tbMath.Location = new System.Drawing.Point(159, 96);
+            this.tbMath.Location = new System.Drawing.Point(173, 96);
             this.tbMath.Name = "tbMath";
             this.tbMath.Size = new System.Drawing.Size(199, 22);
             this.tbMath.TabIndex = 6;
@@ -126,7 +130,7 @@
             // 
             // tbPhysic
             // 
-            this.tbPhysic.Location = new System.Drawing.Point(159, 124);
+            this.tbPhysic.Location = new System.Drawing.Point(173, 124);
             this.tbPhysic.Name = "tbPhysic";
             this.tbPhysic.Size = new System.Drawing.Size(199, 22);
             this.tbPhysic.TabIndex = 8;
@@ -142,7 +146,7 @@
             // 
             // tbTechnology
             // 
-            this.tbTechnology.Location = new System.Drawing.Point(159, 152);
+            this.tbTechnology.Location = new System.Drawing.Point(173, 152);
             this.tbTechnology.Name = "tbTechnology";
             this.tbTechnology.Size = new System.Drawing.Size(199, 22);
             this.tbTechnology.TabIndex = 10;
@@ -158,7 +162,7 @@
             // 
             // tbPolishLang
             // 
-            this.tbPolishLang.Location = new System.Drawing.Point(159, 180);
+            this.tbPolishLang.Location = new System.Drawing.Point(173, 180);
             this.tbPolishLang.Name = "tbPolishLang";
             this.tbPolishLang.Size = new System.Drawing.Size(199, 22);
             this.tbPolishLang.TabIndex = 12;
@@ -174,14 +178,14 @@
             // 
             // tbforeignLang
             // 
-            this.tbforeignLang.Location = new System.Drawing.Point(159, 208);
+            this.tbforeignLang.Location = new System.Drawing.Point(173, 208);
             this.tbforeignLang.Name = "tbforeignLang";
             this.tbforeignLang.Size = new System.Drawing.Size(199, 22);
             this.tbforeignLang.TabIndex = 14;
             // 
             // rtbComments
             // 
-            this.rtbComments.Location = new System.Drawing.Point(159, 249);
+            this.rtbComments.Location = new System.Drawing.Point(173, 322);
             this.rtbComments.Name = "rtbComments";
             this.rtbComments.Size = new System.Drawing.Size(199, 116);
             this.rtbComments.TabIndex = 16;
@@ -190,7 +194,7 @@
             // lbComments
             // 
             this.lbComments.AutoSize = true;
-            this.lbComments.Location = new System.Drawing.Point(38, 252);
+            this.lbComments.Location = new System.Drawing.Point(45, 322);
             this.lbComments.Name = "lbComments";
             this.lbComments.Size = new System.Drawing.Size(45, 16);
             this.lbComments.TabIndex = 17;
@@ -198,7 +202,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(41, 404);
+            this.btnCancel.Location = new System.Drawing.Point(41, 444);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(129, 32);
             this.btnCancel.TabIndex = 18;
@@ -208,7 +212,7 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(213, 404);
+            this.btnConfirm.Location = new System.Drawing.Point(213, 444);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(145, 32);
             this.btnConfirm.TabIndex = 19;
@@ -216,11 +220,56 @@
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
+            // lbGroup
+            // 
+            this.lbGroup.AutoSize = true;
+            this.lbGroup.Location = new System.Drawing.Point(38, 245);
+            this.lbGroup.Name = "lbGroup";
+            this.lbGroup.Size = new System.Drawing.Size(50, 16);
+            this.lbGroup.TabIndex = 20;
+            this.lbGroup.Text = "Grupa :";
+            // 
+            // lbAdditionalTasks
+            // 
+            this.lbAdditionalTasks.AutoSize = true;
+            this.lbAdditionalTasks.Location = new System.Drawing.Point(38, 277);
+            this.lbAdditionalTasks.Name = "lbAdditionalTasks";
+            this.lbAdditionalTasks.Size = new System.Drawing.Size(128, 16);
+            this.lbAdditionalTasks.TabIndex = 21;
+            this.lbAdditionalTasks.Text = "Zajecia dodatkowe :";
+            // 
+            // chbAdditionalTasks
+            // 
+            this.chbAdditionalTasks.AutoSize = true;
+            this.chbAdditionalTasks.Location = new System.Drawing.Point(266, 278);
+            this.chbAdditionalTasks.Name = "chbAdditionalTasks";
+            this.chbAdditionalTasks.Size = new System.Drawing.Size(18, 17);
+            this.chbAdditionalTasks.TabIndex = 22;
+            this.chbAdditionalTasks.UseVisualStyleBackColor = true;
+            // 
+            // cbPickGroup
+            // 
+            this.cbPickGroup.FormattingEnabled = true;
+            this.cbPickGroup.Location = new System.Drawing.Point(173, 245);
+            this.cbPickGroup.Name = "cbPickGroup";
+            this.cbPickGroup.Size = new System.Drawing.Size(199, 24);
+            this.cbPickGroup.TabIndex = 23;
+            this.cbPickGroup.Text = "Wybierz Grupę";
+            this.cbPickGroup.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            // 
             // AddEditStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(425, 488);
+            this.Controls.Add(this.cbPickGroup);
+            this.Controls.Add(this.chbAdditionalTasks);
+            this.Controls.Add(this.lbAdditionalTasks);
+            this.Controls.Add(this.lbGroup);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbComments);
@@ -273,5 +322,9 @@
         private System.Windows.Forms.Label lbComments;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Label lbGroup;
+        private System.Windows.Forms.Label lbAdditionalTasks;
+        private System.Windows.Forms.CheckBox chbAdditionalTasks;
+        private System.Windows.Forms.ComboBox cbPickGroup;
     }
 }
